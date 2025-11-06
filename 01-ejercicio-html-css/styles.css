@@ -254,7 +254,7 @@ form {
   padding-inline: 1rem;
 }
 
-form > div {
+form > div:first-child {
   display: flex;
   align-items: center;
   background-color: var(--input-bg);
@@ -423,7 +423,7 @@ article {
 
 /* RESULTADOS DE BÚSQUEDA DE EMPLEO */
 
-footer.resultados {
+ul.resultados {
   display: flex !important;
   flex-direction: column !important;
   border-left: 1px solid var(--border);
@@ -441,7 +441,7 @@ header.resultados {
   padding-left: 0px;
 }
 
-.resultados article {
+.resultados li article {
   display: block;
   background: transparent;
   padding: 1rem;
@@ -454,7 +454,7 @@ header.resultados {
   box-shadow: none;
 }
 
-.resultados article:last-child {
+.resultados li:last-child article {
   border-bottom: none; 
 }
 
@@ -517,5 +517,5 @@ header.resultados {
   margin-top: 1rem;
   width: 100%;
   margin-inline: auto;
-  padding: 1rem;
+  padding-block: 1rem;
 }
